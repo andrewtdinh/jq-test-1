@@ -1,19 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body{
-  color: hsla(52, 100%, 20%, 1.0);
-  background-color: #FFDC00;
+  background-color: lightblue;
 }
 
-#apollo{
-  border: 5px solid hsla(52, 100%, 20%, 1.0);
-  width: 150px;
-  height: 225px;
+#outer{
+  width: 700px;
 }
 
-#title{
-  position: relative;
-  top: -170px;
-  left: 200px;
-  font-family: monospace;
-  letter-spacing: 10px;
-  font-size: 40px;
+#evens, #threes, #others {
+
+  color: yellow;
+  border: 1px solid red;
+  background-color: green;
+  padding: 10px;
+  margin: 0;
+}
+#evens div, #threes div, #others div {
+
+  color: blue;
+  border: 1px solid lightblue;
+  display: inline;
+  padding: 2px;
+  margin: 2px;
+
+}
+
+.selected{
+  border: 3px solid black;
 }

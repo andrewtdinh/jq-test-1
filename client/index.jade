@@ -2,13 +2,20 @@ doctype html
 html
   head
     meta(charset='utf-8')      
-    title Apollo
+    title JQuery Test
     link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
     link(rel='shortcut icon', href='/favicon.ico')
   body
-    img#apollo(src='/assets/apollo.jpg')
-    h1#title Apollo
-
+    h1#title JQuery Test
+    
+    #outer
+      button#getRandomNums Get 20 random numbers
+      #evens Even Numbers
+      #odds
+        #threes Numbers divisible by 3
+        #others Others
+    
+    script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='/vendor/lodash/lodash.min.js')
     script(src=isProd ? '/index.min.js' : '/index.js')
